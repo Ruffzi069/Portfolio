@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{ 
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: "Asap Condensed", sans-serif;
+}
+.box1 h1{
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    left: 20px;
+    width: 170px;
+    position: relative;
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+}
+
+.ul1{ 
+    position: relative;
+    left: 1050px;
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+.home,.about,.proj,.exper{
+    border: 4px groove white;
+    border-radius: 20px;
+    text-align: center;
+    width: 135px;
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    margin-left: 20px;  
+    font-size: 25px;
+    transition-duration: 0.5s;
+}
+.box2 li:hover{
+    background-image: linear-gradient(to right, #cf23cf, #ff6b08, #f32170);
+    width: 135px;
+}
+.about a{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+}
+.proj a{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+}
+.maincont{
+    display: grid;
+    grid-template-areas: 'home home home home'
+    'about about about about'
+    'project project project project'
+    'experience experience experience experience'
+    'footer footer footer footer';
+}
+.container1{
+    display: grid;
+    height: 1000px;
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 20px;
+    grid-area: home;
+    background-color: black;
+}
+.Home img {
+    position: relative;
+    height: 320px;
+    left: 1450px;
+    top: 230px;
+    border-radius: 30%;
+    transition-duration: 0.3s;
+}
+.Home h1{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    font-size: 60px;
+    color: white;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    transition-duration: 0.5s;
+}
+.Home h2{
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    font-size: 50px;
+    color: grey;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    transition-duration: 0.5s;
+}
+.Home p{
+    position: absolute;
+    top: 530px;
+    left: 150px;
+    font-size: 30px;
+    color: white;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    transition-duration: 0.5s;
+}
+
+.Home h1:hover{
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    width: 1200px;
+}
+
+.Home h2:hover{
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    width: 1200px;
+    color: white;
+}
+
+.Home p:hover{
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    width: 1200px;
+}
+
+.Home img:hover{
+    transform: scale(1.1,1.1);
+}
+
+#container2{
+    display: grid;
+    height: 1000px;
+    width: 100%;
+    border: 4px solid white;
+    border-bottom: 30px;
+    grid-area: about;
+    transition-duration: 0.5s;
+}
+.abb{
+    display: flex;
+    position: relative;
+    font-family: "Asap Condensed", sans-serif;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    justify-self: center;
+    top: 20px;
+    font-size: 50px;
+    width: 140px;
+}
+.p1a{
+    position: absolute;
+    top: 1780px;
+    left: 150px;
+    font-size: 30px;
+    color: white;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+}
+.p2a{
+    position: absolute;
+    text-align: right;
+    top: 1580px;
+    left: 790px;
+    font-size: 30px;
+    color: white;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+}
+.p3a{
+    position: absolute;
+    top: 1380px;
+    left: 150px;
+    font-size: 30px;
+    color: white;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+}
+
+.About p:hover{
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    width: 1330px;
+}
+
+#container3{
+    display: grid;
+    height: 1000px;
+    width: 100%;
+    border: 4px solid white;
+    grid-area: project;
+    background-color: black;
+}
+
+.projs{
+    display: flex;
+    position: relative;
+    font-family: "Asap Condensed", sans-serif;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    justify-self: center;
+    top: 20px;
+    font-size: 50px;
+    width: 180px;
+}
+
+.items{
+    position: relative;
+    top: 40px;
+    left: 150px;
+    font-family: "Asap Condensed", sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.subd{
+    position: relative;
+    top: 40px;
+    left: 150px;
+    font-family: "Asap Condensed", sans-serif;
+    color: grey;
+    font-size: 35px;
+}
+
+.items:hover{
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    width: 700px;
+}
+
+.container4{
+    display: grid;
+    height: 1000px;
+    width: 100%;
+    border: 3px solid white;
+    grid-area: experience;
+    background-color: black;
+}
+
+.expert{
+    display: flex;
+    position: relative;
+    font-family: "Asap Condensed", sans-serif;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    justify-self: center;
+    top: 20px;
+    font-size: 50px;
+    width: 400px;
+}
+
+.Experience{
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 30px;
+    color: white;
+    list-style: circle;
+    position: relative;
+    top: 5px;
+    left: 150px;
+}
+.Experience div{
+    font-size: 40px;
+    width: 500px;
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+}
+
+li:hover{
+    background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf);
+    width: 1300px;
+}
+
+footer{
+    border: 3px solid white;
+    color: white;
+    display: grid;
+    grid-area: footer;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 20px;
+}
